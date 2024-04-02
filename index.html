@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body class="body">
+        <div class="calculator">
+            <input class="calculator-input" id="result" type="text" placeholder="0" disabled="disabled">
+                <div class="calculator-numpad">
+                    <div class="row">
+                        <button onclick="clearInput()" type="button" class="calculator-clear">C</button>
+                        <button onclick="typeKey('/')" type="button" class="calculator-number">/</button>
+                        <button onclick="typeKey('*')" type="button" class="calculator-number">X</button>
+                    </div>
+                    <div class="row">
+                        <button onclick="typeKey('7')" type="button" class="calculator-number">7</button>
+                        <button onclick="typeKey('8')" type="button" class="calculator-number">8</button>
+                        <button onclick="typeKey('9')" type="button" class="calculator-number">9</button>
+                        <button onclick="typeKey('-')" type="button" class="calculator-number">-</button> 
+                    </div>
+                    <div class="row">
+                        <button onclick="typeKey('4')" type="button" class="calculator-number">4</button>
+                        <button onclick="typeKey('5')" type="button" class="calculator-number">5</button>
+                        <button onclick="typeKey('6')" type="button" class="calculator-number">6</button>
+                        <button onclick="typeKey('+')" type="button" class="calculator-number">+</button> 
+                    </div>
+                    <div class="row">
+                        <button onclick="typeKey('1')" type="button" class="calculator-number">1</button>
+                        <button onclick="typeKey('2')" type="button" class="calculator-number">2</button>
+                        <button onclick="typeKey('3')" type="button" class="calculator-number">3</button>
+                        <button onclick="equals('equ')" type="button" class="calculator-equal">=</button> 
+                    </div>
+                    <div class="row" style="margin-top: -110px;">
+                        <button onclick="typeKey('0')" type="button" class="calculator-zero">0</button>
+                        <button onclick="typeKey('.')" type="button" class="calculator-number">.</button>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
